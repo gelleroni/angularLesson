@@ -1,0 +1,12 @@
+<form>
+    <label>Title</label>
+    <input name="title" type="text" [(ngModel)]="task.title" />
+    <br/>
+    <label>Description</label>
+    <input name="description" type="textarea" [(ngModel)]="task.desc" />
+    <br/>
+    <label>Date</label>
+    <input name="date" type="date" [(ngModel)]="task.date" />
+
+    <button (click)="addTask();" type="submit">Submit</button>
+</form>
